@@ -3,6 +3,14 @@ package Collections;
 import java.util.*;
 
 public class SetExamples {
+	/*
+	 * duplicate will not accept
+	 * we can not able to update
+	 * 
+	 * HashSet--insertion order will be random
+	 * LinkedHashSet -maintain the insertion order
+	 * TreeSet-- maintain ascending order
+	 */
 	
 	public void setimplementation()
 	{
@@ -49,6 +57,13 @@ public class SetExamples {
 			}
 			System.out.println(eachvalue);
 		}
+		
+		List<Object> L1 = new ArrayList();
+		L1.addAll(h);
+		Collections.sort(L1,Collections.reverseOrder());
+		System.out.println(L1);
+		//h.clear();
+		//h.add(L1);
 	}
 	
 
